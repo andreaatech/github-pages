@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Resources Hub</title>
+    <style>
+      /* Basic Reset & Typography */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      p.subtitle {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 1.1rem;
+        color: #555;
+      }
+
+      /* Card Grid Layout */
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+      .card img {
+        width: 100%;
+        display: block;
+      }
+      .card-content {
+        padding: 20px;
+      }
+      .card-content h2 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+      .card-content p {
+        margin-bottom: 15px;
+        font-size: 1rem;
+        color: #666;
+      }
+      .card-link {
+        text-decoration: none;
+        font-weight: bold;
+        color: #007acc;
+        transition: color 0.2s ease-in-out;
+      }
+      .card-link:hover {
+        color: #005ea6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Resources Hub</h1>
+      <p class="subtitle">Welcome! Explore our curated resources by clicking on the cards below.</p>
+      <div class="card-grid">
+        <!-- Card 1 -->
+        <a
+          href="https://drive.google.com/drive/folders/1h2wIgAjnEXgHbCd1Tj1dUplW-vaLFGAU?usp=sharing"
+          class="card"
+          target="_blank"
+        >
+          <!-- Placeholder image; replace with your desired image -->
+          <img src="https://via.placeholder.com/600x300?text=Folder+1" alt="Folder 1" />
+          <div class="card-content">
+            <h2>Folder 1</h2>
+            <p>This folder holds key documents, guides, and additional resources.</p>
+            <span class="card-link">View Folder &rarr;</span>
+          </div>
+        </a>
+        <!-- Card 2 -->
+        <a
+          href="https://drive.google.com/drive/folders/1lb0BDmxFk5FJsYj-r2Bez9-UKdYE4twz?usp=drive_link"
+          class="card"
+          target="_blank"
+        >
+          <img src="https://via.placeholder.com/600x300?text=Folder+2" alt="Folder 2" />
+          <div class="card-content">
+            <h2>Folder 2</h2>
+            <p>Access lecture slides, course recordings, and supporting materials.</p>
+            <span class="card-link">View Folder &rarr;</span>
+          </div>
+        </a>
+        <!-- Card 3 -->
+        <a
+          href="https://drive.google.com/drive/folders/1Apv--ZS3l4JOGNFandtcvm3kH1uroP0M"
+          class="card"
+          target="_blank"
+        >
+          <img src="https://via.placeholder.com/600x300?text=Folder+3" alt="Folder 3" />
+          <div class="card-content">
+            <h2>Folder 3</h2>
+            <p>Find demo day recordings and other interactive resources in this folder.</p>
+            <span class="card-link">View Folder &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
